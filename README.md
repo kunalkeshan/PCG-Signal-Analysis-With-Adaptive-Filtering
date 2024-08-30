@@ -21,8 +21,8 @@ Our goal is to develop an effective noise reduction technique using adaptive fil
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/pcg-adaptive-filter.git
-   cd pcg-adaptive-filter
+   git clone https://github.com/kunalkeshan/PCG-Signal-Analysis-With-Adaptive-Filtering.git
+   cd PCG-Signal-Analysis-With-Adaptive-Filtering
    ```
 
 2. Create a virtual environment (optional but recommended):
