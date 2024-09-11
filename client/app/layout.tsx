@@ -30,7 +30,11 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body
-				className={cn(fraunces.variable, poppins.variable, 'font-body')}
+				className={cn(
+					fraunces.variable,
+					poppins.variable,
+					'font-body antialiased'
+				)}
 			>
 				{children}
 			</body>
