@@ -1,5 +1,6 @@
 // Types
 import { HTMLAttributeAnchorTarget } from 'react';
+import siteConfig from './site-config';
 
 type NavItem = {
 	name: string;
@@ -51,7 +52,7 @@ export const FOOTER_NAVIGATION: NavItem[] = [
 	},
 	{
 		name: 'GitHub',
-		url: 'https://github.com/kunalkeshan/PCG-Signal-Analysis-With-Adaptive-Filtering',
+		url: siteConfig.github,
 		target: '_blank',
 	},
 	{
@@ -66,7 +67,7 @@ export const FOOTER_NAVIGATION: NavItem[] = [
 	},
 	{
 		name: 'Open Source License',
-		url: 'https://github.com/kunalkeshan/PCG-Signal-Analysis-With-Adaptive-Filtering/blob/main/LICENSE',
+		url: `${siteConfig.github}/blob/main/LICENSE`,
 		target: '_blank',
 	},
 ];

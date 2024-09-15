@@ -71,10 +71,30 @@ const config = {
 					from: { height: 'var(--radix-accordion-content-height)' },
 					to: { height: '0' },
 				},
+				wiggle: {
+					'0%, 100%': { transform: 'rotate(-6deg)' },
+					'50%': { transform: 'rotate(6deg)' },
+				},
+				float: {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(8px)' },
+				},
+				zoom: {
+					'0%, 100%': { transform: 'scale(1)' },
+					'50%': { transform: 'scale(1.05)' },
+				},
+				beat: {
+					'0%, 100%': { transform: 'scale(1)' },
+					'30%': { transform: 'scale(1.05)' },
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
+				wiggle: 'wiggle 1s ease-in-out infinite',
+				float: 'float 3s ease-in-out infinite',
+				zoom: 'zoom 1s ease-in-out infinite',
+				beat: 'beat 1s ease-in-out infinite',
 			},
 		},
 	},
