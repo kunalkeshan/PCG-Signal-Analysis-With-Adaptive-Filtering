@@ -54,7 +54,7 @@ const details: ProjectOverviewDetail[] = [
 const ProjectOverview = () => {
 	return (
 		<section className='w-full max-w-screen-xl mx-auto p-6 md:px-16'>
-			<h2 className='font-heading font-semibold text-3xl'>
+			<h2 className='font-heading font-semibold text-3xl text-center'>
 				Project Overview
 			</h2>
 			<div className='w-full mt-5 grid grid-cols-1 lg:grid-cols-2'>
@@ -72,45 +72,52 @@ const ProjectOverview = () => {
 						className: 'justify-start h-fit lg:sticky top-20',
 					}}
 				/>
-				<div className='shadow-lg p-6 md:px-16 rounded-2xl h-fit'>
-					<Accordion type='multiple'>
-						{details.map((detail, index) => (
-							<AccordionItem
-								key={`project-overview-item-${index}`}
-								value={detail.title}
-							>
-								<AccordionTrigger className='gap-5'>
-									<div className='text-left flex items-start gap-3'>
-										<p className='text-4xl rotate-6'>
-											{index + 1}
-										</p>
-										<div>
-											<h3 className='text-lg font-heading font-normal'>
-												{detail.title}
-											</h3>
-											<p className='font-normal text-sm text-dim-greys'>
-												{detail.description}
+				<div>
+					<div className='shadow-lg p-6 md:px-16 rounded-2xl h-fit'>
+						<Accordion type='multiple'>
+							{details.map((detail, index) => (
+								<AccordionItem
+									key={`project-overview-item-${index}`}
+									value={detail.title}
+								>
+									<AccordionTrigger className='gap-5'>
+										<div className='text-left flex items-start gap-3'>
+											<p className='text-4xl rotate-6'>
+												{index + 1}
 											</p>
+											<div>
+												<h3 className='text-lg font-heading font-normal'>
+													{detail.title}
+												</h3>
+												<p className='font-normal text-sm text-dim-greys'>
+													{detail.description}
+												</p>
+											</div>
 										</div>
-									</div>
-								</AccordionTrigger>
-								<AccordionContent>
-									<ul className='list-inside list-disc flex flex-col gap-3'>
-										{detail.details.map(
-											(item, detailIndex) => (
-												<li
-													key={`project-overview-detail-${detailIndex}`}
-													className='font-medium'
-												>
-													{item}
-												</li>
-											)
-										)}
-									</ul>
-								</AccordionContent>
-							</AccordionItem>
-						))}
-					</Accordion>
+									</AccordionTrigger>
+									<AccordionContent>
+										<ul className='list-inside list-disc flex flex-col gap-3'>
+											{detail.details.map(
+												(item, detailIndex) => (
+													<li
+														key={`project-overview-detail-${detailIndex}`}
+														className='font-medium'
+													>
+														{item}
+													</li>
+												)
+											)}
+										</ul>
+									</AccordionContent>
+								</AccordionItem>
+							))}
+						</Accordion>
+					</div>
+					<p className='font-medium mt-5 text-center lg:text-left'>
+						In this project, adaptive filtering is applied to PCG
+						signals to enhance their quality, potentially leading to
+						more accurate heart sound analysis and diagnosis.
+					</p>
 				</div>
 			</div>
 		</section>
