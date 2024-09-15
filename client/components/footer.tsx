@@ -34,6 +34,21 @@ const Footer = () => {
 					))}
 				</ul>
 			</div>
+			<hr className='my-4 border border-white/50 rounded-2xl' />
+			<div className='max-w-screen-xl mx-auto flex flex-wrap items-center justify-center gap-2 text-center text-sm text-white'>
+				<p>&copy; 2024 PCGAwAF. All rights reserved.</p>
+				<p>
+					Design inspired by{' '}
+					<Link
+						href={'https://bright-beginnings.webflow.io/'}
+						target='_blank'
+						className='text-primary underline'
+					>
+						Bright Beginnings
+					</Link>
+					.
+				</p>
+			</div>
 		</footer>
 	);
 };
