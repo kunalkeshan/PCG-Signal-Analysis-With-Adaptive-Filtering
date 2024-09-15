@@ -50,6 +50,21 @@ export const FOOTER_NAVIGATION: NavItem[] = [
 		target: '_self',
 	},
 	{
+		name: 'GitHub',
+		url: 'https://github.com/kunalkeshan/PCG-Signal-Analysis-With-Adaptive-Filtering',
+		target: '_blank',
+	},
+	{
+		name: 'Privacy Policy',
+		url: '/privacy',
+		target: '_self',
+	},
+	{
+		name: 'Terms & Conditions',
+		url: '/terms',
+		target: '_self',
+	},
+	{
 		name: 'Open Source License',
 		url: 'https://github.com/kunalkeshan/PCG-Signal-Analysis-With-Adaptive-Filtering/blob/main/LICENSE',
 		target: '_blank',

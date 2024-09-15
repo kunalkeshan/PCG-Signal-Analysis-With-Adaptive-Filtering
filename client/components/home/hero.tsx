@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Hero = () => {
-	return <div className='min-h-[200vh]'>Hero</div>;
+	return <div className='bg-background min-h-screen'>Hero</div>;
 };
 
 export default Hero;

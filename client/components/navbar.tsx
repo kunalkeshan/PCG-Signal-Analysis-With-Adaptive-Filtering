@@ -13,7 +13,7 @@ const Navbar = () => {
 			<div className='max-w-screen-xl mx-auto flex items-center justify-between gap-10'>
 				<Link
 					href={'/'}
-					className='hover:scale-105 transition-transform duration-300 flex items-center gap-2'
+					className='hover:scale-105 transition-transform duration-300 flex items-center gap-2 w-fit'
 				>
 					<Image
 						src='/assets/logo.png'
