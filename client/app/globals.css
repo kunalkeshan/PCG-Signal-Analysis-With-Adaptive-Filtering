@@ -4,7 +4,7 @@
 
 @layer base {
 	:root {
-		--background: 0 0% 100%;
+		--background: 42 53% 97%;
 		--foreground: 20 14.3% 4.1%;
 		--card: 0 0% 100%;
 		--card-foreground: 20 14.3% 4.1%;
@@ -29,6 +29,14 @@
 		--chart-3: 197 37% 24%;
 		--chart-4: 43 74% 66%;
 		--chart-5: 27 87% 67%;
+
+		/* Custom */
+		--dim-greys: #696d7d;
+		--dim-grey: #4e515c;
+		--burntsienna: #e76f51;
+		--floral-white: #fbf8f2;
+		--dark-grey: #9c9ea7;
+		--mustard: #c2beb5;
 	}
 
 	.dark {
