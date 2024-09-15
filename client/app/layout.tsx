@@ -34,7 +34,7 @@ export default function RootLayout({
 				className={cn(
 					fraunces.variable,
 					poppins.variable,
-					'font-body antialiased'
+					'font-body antialiased min-h-screen w-full flex flex-col'
 				)}
 			>
 				<Navbar />

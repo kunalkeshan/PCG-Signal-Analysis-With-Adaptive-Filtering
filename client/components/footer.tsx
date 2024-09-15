@@ -7,7 +7,7 @@ import { FOOTER_NAVIGATION } from '@/constants/navigation';
 
 const Footer = () => {
 	return (
-		<footer className='w-full bg-foreground p-6 md:px-16 text-white'>
+		<footer className='w-full bg-foreground p-6 md:px-16 text-white mt-auto'>
 			<div className='max-w-screen-xl mx-auto flex items-center justify-between gap-5 flex-wrap'>
 				<Link
 					href={'/'}
