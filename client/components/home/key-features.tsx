@@ -120,10 +120,7 @@ const KeyFeatures = () => {
 						key={`key-feature-${index}`}
 						className='shadow-lg rounded-2xl p-4 relative w-full md:w-1/2 lg:w-1/4 xl:w-1/5 group hover:shadow-xl transition-all duration-300 hover:-translate-y-1'
 					>
-						<CircleCheckBig
-							size={36}
-							className='shrink-0 absolute -top-2 -right-2 rotate-12 group-hover:rotate-0 transition-transform duration-300'
-						/>
+						<CircleCheckBig className='shrink-0 text-xl lg:text-4xl absolute -top-2 -right-2 rotate-12 group-hover:rotate-0 transition-transform duration-300' />
 						<h3 className='text-lg font-heading font-normal'>
 							{feature.title}
 						</h3>
