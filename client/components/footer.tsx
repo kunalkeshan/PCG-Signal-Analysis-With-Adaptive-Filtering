@@ -26,7 +26,7 @@ const Footer = () => {
 				<ul className='flex items-center gap-5 flex-wrap'>
 					{FOOTER_NAVIGATION.map((item) => (
 						<li
-							key={`navbar-nav-item-${item.url}`}
+							key={`footer-nav-item-${item.url}`}
 							className='hover:underline'
 						>
 							<Link href={item.url}>{item.name}</Link>

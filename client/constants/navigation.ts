@@ -16,7 +16,7 @@ const COMMON_NAVIGATION: NavItem[] = [
 	},
 	{
 		name: 'About',
-		url: '/project',
+		url: '/about',
 		target: '_self',
 	},
 	{
