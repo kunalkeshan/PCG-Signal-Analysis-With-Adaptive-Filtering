@@ -15,9 +15,9 @@ const Hero = () => {
 	];
 
 	return (
-		<section className='bg-background w-full p-6 md:px-16'>
-			<div className='max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5'>
-				<div className='flex flex-col gap-5'>
+		<section className='bg-background w-full'>
+			<div className='max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2'>
+				<div className='flex flex-col gap-5 p-6 md:px-16'>
 					<h1 className='font-heading text-5xl font-semibold'>
 						PCG Signal Analysis with Adaptive Filtering
 					</h1>
@@ -46,6 +46,7 @@ const Hero = () => {
 						alt: 'PCG Signal Analysis with Adaptive Filtering',
 						priority: true,
 					}}
+					figure={{ className: 'p-6 md:px-16 animate-float' }}
 				/>
 			</div>
 		</section>

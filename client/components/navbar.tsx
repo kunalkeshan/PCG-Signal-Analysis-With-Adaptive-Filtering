@@ -9,7 +9,7 @@ import { NAVBAR_NAVIGATION } from '@/constants/navigation';
 
 const Navbar = () => {
 	return (
-		<nav className='sticky top-0 p-6 md:px-16 bg-background'>
+		<nav className='sticky top-0 p-6 md:px-16 bg-background z-50'>
 			<div className='max-w-screen-xl mx-auto flex items-center justify-between gap-10'>
 				<Link
 					href={'/'}

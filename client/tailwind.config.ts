@@ -11,7 +11,7 @@ const config = {
 	prefix: '',
 	theme: {
 		container: {
-			center: true,
+			center: 'true',
 			padding: '2rem',
 			screens: {
 				'2xl': '1400px',
@@ -56,6 +56,7 @@ const config = {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))',
 				},
+				'dim-greys': 'var(--dim-greys)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -64,28 +65,52 @@ const config = {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: { height: '0' },
-					to: { height: 'var(--radix-accordion-content-height)' },
+					from: {
+						height: '0',
+					},
+					to: {
+						height: 'var(--radix-accordion-content-height)',
+					},
 				},
 				'accordion-up': {
-					from: { height: 'var(--radix-accordion-content-height)' },
-					to: { height: '0' },
+					from: {
+						height: 'var(--radix-accordion-content-height)',
+					},
+					to: {
+						height: '0',
+					},
 				},
 				wiggle: {
-					'0%, 100%': { transform: 'rotate(-6deg)' },
-					'50%': { transform: 'rotate(6deg)' },
+					'0%, 100%': {
+						transform: 'rotate(-6deg)',
+					},
+					'50%': {
+						transform: 'rotate(6deg)',
+					},
 				},
 				float: {
-					'0%, 100%': { transform: 'translateY(0px)' },
-					'50%': { transform: 'translateY(8px)' },
+					'0%, 100%': {
+						transform: 'translateY(0px)',
+					},
+					'50%': {
+						transform: 'translateY(8px)',
+					},
 				},
 				zoom: {
-					'0%, 100%': { transform: 'scale(1)' },
-					'50%': { transform: 'scale(1.05)' },
+					'0%, 100%': {
+						transform: 'scale(1)',
+					},
+					'50%': {
+						transform: 'scale(1.05)',
+					},
 				},
 				beat: {
-					'0%, 100%': { transform: 'scale(1)' },
-					'30%': { transform: 'scale(1.05)' },
+					'0%, 100%': {
+						transform: 'scale(1)',
+					},
+					'30%': {
+						transform: 'scale(1.05)',
+					},
 				},
 			},
 			animation: {
