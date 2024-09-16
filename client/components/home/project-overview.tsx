@@ -66,7 +66,6 @@ const ProjectOverview = () => {
 					image={{
 						src: '/assets/clipboard.png',
 						alt: 'PCG Signal Analysis with Adaptive Filtering',
-						priority: true,
 					}}
 					figure={{
 						className: 'justify-start h-fit lg:sticky top-20',
