@@ -1,11 +1,9 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 import { Button } from '@/components/ui/button';
 import { FolderKanban } from 'lucide-react';
 
-import siteConfig from '@/constants/site-config';
 import AttributedImage from '../attributed-image';
 
 const Hero = () => {
@@ -30,7 +28,7 @@ const Hero = () => {
 						</p>
 					))}
 					<Button className='gap-2 lg:w-fit font-semibold' asChild>
-						<Link href={siteConfig.github} target='_blank'>
+						<Link href={'/project'} target='_blank'>
 							<FolderKanban className='shrink-0' size={20} />
 							<span>View Project Details</span>
 						</Link>
