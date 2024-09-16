@@ -40,7 +40,11 @@ const AttributedImage: React.FC<Props> = ({
 				className={cn('text-xs text-center', figcaption?.className)}
 			>
 				Image by{' '}
-				<Link href={attribute.url} target='_blank'>
+				<Link
+					href={attribute.url}
+					target='_blank'
+					className='hover:underline hover:text-primary transition-all duration-300'
+				>
 					{attribute.name}
 				</Link>
 			</figcaption>
