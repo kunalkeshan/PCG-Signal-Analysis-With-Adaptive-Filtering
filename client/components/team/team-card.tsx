@@ -15,7 +15,7 @@ const TeamMemberCard: React.FC<Props> = ({ member, className, ...props }) => {
 	return (
 		<div
 			className={cn(
-				'rounded-2xl w-full border border-dim-greys p-4 lg:p-6 flex flex-col gap-3 hover:bg-gray-100 group hover:-translate-y-1 transition-all duration-300',
+				'rounded-2xl bg-white w-full border border-dim-greys p-4 lg:p-6 flex flex-col gap-3 hover:bg-gray-100 group hover:-translate-y-1 transition-all duration-300',
 				className
 			)}
 			{...props}
