@@ -1,5 +1,7 @@
+'use client';
+
 // Dependencies
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -19,8 +21,18 @@ import { NAVBAR_NAVIGATION } from '@/constants/navigation';
 interface Props extends React.HTMLProps<typeof SheetTrigger> {}
 
 const SheetNav: React.FC<Props> = ({ className }) => {
+	const [open, setOpen] = useState(false);
+
+	const handleToggleOpen = (value: boolean) => {
+		setOpen(value);
+	};
+
+	const handleCloseSheet = () => {
+		setOpen(false);
+	};
+
 	return (
-		<Sheet>
+		<Sheet open={open} onOpenChange={handleToggleOpen}>
 			<SheetTrigger className={cn(className)}>
 				<Menu className='shrink-0' strokeWidth={2} />
 			</SheetTrigger>
@@ -30,6 +42,7 @@ const SheetNav: React.FC<Props> = ({ className }) => {
 						<Link
 							href={'/'}
 							className='hover:scale-105 transition-transform duration-300 w-fit'
+							onClick={handleCloseSheet}
 						>
 							<Image
 								src='/assets/logo.png'
@@ -50,7 +63,9 @@ const SheetNav: React.FC<Props> = ({ className }) => {
 							key={`navbar-sheet-nav-item-${item.url}`}
 							className='hover:underline font-medium text-lg'
 						>
-							<Link href={item.url}>{item.name}</Link>
+							<Link href={item.url} onClick={handleCloseSheet}>
+								{item.name}
+							</Link>
 						</li>
 					))}
 				</ul>

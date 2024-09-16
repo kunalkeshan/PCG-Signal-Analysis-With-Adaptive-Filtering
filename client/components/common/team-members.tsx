@@ -12,7 +12,7 @@ const TeamMembers = () => {
 				<h2 className='font-heading font-semibold text-3xl text-center'>
 					Meet our Team
 				</h2>
-				<div className='mt-10 w-full grid grid-cols-2 xl:grid-cols-4 gap-5 lg:gap-10'>
+				<div className='mt-10 w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 lg:gap-10'>
 					{STUDENT_TEAM.map((member) => (
 						<TeamMemberCard key={member.slug} member={member} />
 					))}
