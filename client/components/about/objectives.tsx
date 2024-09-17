@@ -62,7 +62,7 @@ const Objectives = () => {
 									value={objective.title}
 								>
 									<AccordionTrigger className='gap-5'>
-										<div className='text-left flex items-start gap-3'>
+										<div className='text-left flex items-center gap-3'>
 											<p className='text-4xl rotate-6'>
 												{index + 1}
 											</p>
