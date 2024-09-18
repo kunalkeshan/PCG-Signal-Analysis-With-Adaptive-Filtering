@@ -52,7 +52,7 @@ const Objectives = () => {
 			<h2 className='font-heading font-semibold text-3xl text-center'>
 				Objectives
 			</h2>
-			<div className='w-full mt-5 grid grid-cols-1 lg:grid-cols-2'>
+			<div className='w-full mt-10 grid grid-cols-1 lg:grid-cols-2'>
 				<div>
 					<div className='shadow-lg p-6 md:px-16 rounded-2xl h-fit'>
 						<Accordion type='multiple'>
