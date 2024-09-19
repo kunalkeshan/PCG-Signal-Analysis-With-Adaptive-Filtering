@@ -7,6 +7,7 @@ import {
 	SquareStack,
 	Timer,
 } from 'lucide-react';
+import AttributedImage from '../attributed-image';
 
 type KeyAspectItem = {
 	title: string;
@@ -76,6 +77,17 @@ const Methodology = () => {
 						</li>
 					))}
 				</ul>
+				<AttributedImage
+					attribute={{
+						name: 'Kyo Takahashi, Naoki Honma and Yoshitaka Tsunekawa',
+						url: 'https://www.intechopen.com/chapters/17785',
+					}}
+					image={{
+						src: '/assets/lms-adaptive-filter-diagram.jpeg',
+						alt: 'PCG Signal Analysis with Adaptive Filtering',
+					}}
+					figure={{ className: 'w-full mt-10' }}
+				/>
 			</div>
 		</section>
 	);

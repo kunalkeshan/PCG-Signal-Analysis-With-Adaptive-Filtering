@@ -129,7 +129,6 @@ const ProjectBackground = () => {
 					image={{
 						src: '/assets/pcg-components.png',
 						alt: 'PCG Signal Analysis with Adaptive Filtering',
-						priority: true,
 					}}
 					figure={{ className: 'w-full' }}
 				/>
