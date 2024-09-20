@@ -42,6 +42,47 @@ const keyAspects: KeyAspectItem[] = [
 	},
 ];
 
+const multiStageDetails = [
+	{
+		title: 'Preprocessing',
+		details: [
+			'Signal segmentation to isolate individual heartbeats',
+			'Initial noise reduction using traditional digital filters',
+			'Normalization to account for amplitude variations',
+		],
+	},
+	{
+		title: 'Adaptive Filtering',
+		details: [
+			'Application of our advanced adaptive filtering techniques to further reduce noise and enhance signal quality',
+			'Separation of heart sounds from murmurs and other cardiac events',
+		],
+	},
+	{
+		title: 'Feature Extraction',
+		details: [
+			'Time-domain feature extraction (e.g., duration of heart sounds, timing intervals)',
+			'Frequency-domain feature extraction using techniques like Short-Time Fourier Transform (STFT) and Wavelet Transform',
+			'Non-linear feature extraction to capture complex signal dynamics',
+		],
+	},
+	{
+		title: 'Machine Learning Classification',
+		details: [
+			'Use of extracted features to train and apply machine learning models',
+			'Classification of heart sounds into normal and various abnormal categories',
+			'Potential for identifying specific cardiac conditions based on PCG patterns',
+		],
+	},
+	{
+		title: 'Post-processing and Interpretation',
+		details: [
+			'Integration of classification results with other available patient data',
+			'Generation of summary reports and visualizations for clinical interpretation',
+		],
+	},
+];
+
 const Methodology = () => {
 	return (
 		<section className='w-full bg-background p-6 md:p-16'>
@@ -83,11 +124,47 @@ const Methodology = () => {
 						url: 'https://www.intechopen.com/chapters/17785',
 					}}
 					image={{
-						src: '/assets/lms-adaptive-filter-diagram.jpeg',
+						src: '/assets/lms-adaptive-filter-diagram.png',
 						alt: 'PCG Signal Analysis with Adaptive Filtering',
 					}}
 					figure={{ className: 'w-full mt-10' }}
 				/>
+				<div className='mt-10 flex flex-col gap-5'>
+					<h3 className='text-2xl font-heading font-medium'>
+						Explanation of the multi-stage approach
+					</h3>
+					<p className='font-medium'>
+						Our PCG signal analysis employs a multi-stage approach
+						to comprehensively process and interpret the complex
+						cardiac signals. This approach allows us to tackle
+						different aspects of the signal analysis problem in a
+						structured and efficient manner. The stages include:
+					</p>
+					<ol className='flex list-outside ml-4 list-decimal flex-col gap-5 w-full'>
+						{multiStageDetails.map((item, index) => (
+							<li key={`challenge-${index}`} className='w-full'>
+								<h4 className='text-lg font-heading font-normal'>
+									{item.title}
+								</h4>
+								<ul className='list-inside list-disc'>
+									{item.details.map((detail, i) => (
+										<li
+											key={`pcg-detail-${i}`}
+											className='font-normal text-sm text-dim-greys mt-2'
+										>
+											{detail}
+										</li>
+									))}
+								</ul>
+							</li>
+						))}
+					</ol>
+					<p className='font-medium'>
+						Each stage in this approach is designed to build upon
+						the results of the previous stages, culminating in a
+						comprehensive analysis of the PCG signal.
+					</p>
+				</div>
 			</div>
 		</section>
 	);
