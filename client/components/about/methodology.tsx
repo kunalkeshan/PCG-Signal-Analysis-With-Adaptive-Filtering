@@ -67,14 +67,6 @@ const multiStageDetails = [
 		],
 	},
 	{
-		title: 'Machine Learning Classification',
-		details: [
-			'Use of extracted features to train and apply machine learning models',
-			'Classification of heart sounds into normal and various abnormal categories',
-			'Potential for identifying specific cardiac conditions based on PCG patterns',
-		],
-	},
-	{
 		title: 'Post-processing and Interpretation',
 		details: [
 			'Integration of classification results with other available patient data',
