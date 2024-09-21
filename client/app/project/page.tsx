@@ -1,3 +1,9 @@
+import Hero from '@/components/project/hero';
+
 export default function Project() {
-	return <div></div>;
+	return (
+		<main>
+			<Hero />
+		</main>
+	);
 }
