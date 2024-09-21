@@ -21,7 +21,7 @@ const Hero = () => {
 					</h1>
 					{subtitles.map((subtitle, index) => (
 						<p
-							key={`landing-hero-subtitle-${index}`}
+							key={`about-hero-subtitle-${index}`}
 							className='font-medium'
 						>
 							{subtitle}
