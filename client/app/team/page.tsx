@@ -1,3 +1,9 @@
+import Hero from '@/components/team/hero';
+
 export default function TeamMembers() {
-	return <div></div>;
+	return (
+		<main>
+			<Hero />
+		</main>
+	);
 }
