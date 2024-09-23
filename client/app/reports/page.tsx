@@ -1,3 +1,9 @@
+import Hero from '@/components/reports/hero';
+
 export default function Reports() {
-	return <div></div>;
+	return (
+		<main>
+			<Hero />
+		</main>
+	);
 }
