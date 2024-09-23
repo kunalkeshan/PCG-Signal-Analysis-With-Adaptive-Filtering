@@ -8,7 +8,7 @@ import AttributedImage from '../attributed-image';
 
 const Hero = () => {
 	const subtitles = [
-		'Project reports, including PDFs, presentations, and other related documents, are available here.',
+		'Various resources such as publications, online references, and documentation to support our research and development efforts are mentioned here.',
 		"Our PCG Signal Analysis project aims to improve the quality of heart sound recordings using advanced digital signal processing techniques. By applying adaptive filtering algorithms, we're working to reduce noise and enhance the clarity of phonocardiogram signals.",
 	];
 
@@ -17,7 +17,7 @@ const Hero = () => {
 			<div className='max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2'>
 				<div className='flex flex-col gap-5 p-6 md:px-16 md:pb-16'>
 					<h1 className='font-heading text-5xl font-semibold leading-tight'>
-						Project Reports
+						Resources
 					</h1>
 					{subtitles.map((subtitle, index) => (
 						<p
@@ -37,10 +37,10 @@ const Hero = () => {
 				<AttributedImage
 					attribute={{
 						name: 'Thierry Fousse',
-						url: 'https://dribbble.com/shots/10812083-List-is-empty',
+						url: 'https://dribbble.com/shots/4202333-Brain',
 					}}
 					image={{
-						src: '/assets/list-is-empty.png',
+						src: '/assets/brain.png',
 						alt: 'PCG Signal Analysis with Adaptive Filtering',
 						priority: true,
 					}}

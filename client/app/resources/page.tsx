@@ -1,3 +1,9 @@
+import Hero from '@/components/resources/hero';
+
 export default function Resources() {
-	return <div></div>;
+	return (
+		<main>
+			<Hero />
+		</main>
+	);
 }
