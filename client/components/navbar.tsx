@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import SheetNav from './shee-nav';
+import SheetNav from './sheet-nav';
 
 import { NAVBAR_NAVIGATION } from '@/constants/navigation';
 
