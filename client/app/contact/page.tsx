@@ -1,3 +1,9 @@
+import Hero from '@/components/contact/hero';
+
 export default function Contact() {
-	return <div></div>;
+	return (
+		<main>
+			<Hero />
+		</main>
+	);
 }
