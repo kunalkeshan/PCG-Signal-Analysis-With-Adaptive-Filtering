@@ -1,4 +1,10 @@
 import React from 'react';
+import {
+	Accordion,
+	AccordionContent,
+	AccordionItem,
+	AccordionTrigger,
+} from '@/components/ui/accordion';
 
 const FAQs = () => {
 	const faqContent = [
@@ -56,6 +62,18 @@ const FAQs = () => {
 			<h2 className='font-heading font-semibold text-3xl text-center'>
 				Frequently Asked Questions
 			</h2>
+			<Accordion type='single' collapsible className='mt-10'>
+				{faqContent.map((item, index) => (
+					<AccordionItem
+						key={`faq-item-${index}`}
+						value={item.question}
+						className='border-b'
+					>
+						<AccordionTrigger>{item.question}</AccordionTrigger>
+						<AccordionContent>{item.answer}</AccordionContent>
+					</AccordionItem>
+				))}
+			</Accordion>
 		</section>
 	);
 };
