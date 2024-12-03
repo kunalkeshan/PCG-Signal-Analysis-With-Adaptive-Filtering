@@ -29,7 +29,7 @@ Our goal is to develop an effective noise reduction technique using adaptive fil
 
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   source venv/bin/activate  # On Windows, use `.\venv\Scripts\activate.bat`
    ```
 
 3. Install the required packages:

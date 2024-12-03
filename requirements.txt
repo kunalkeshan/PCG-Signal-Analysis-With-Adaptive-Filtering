@@ -1,2 +1,7 @@
-numpy==2.1.0
+numpy<2.0
 matplotlib==3.5.2
+simpleaudio
+inquirer
+scipy
+audioread
+ffmpeg-python
