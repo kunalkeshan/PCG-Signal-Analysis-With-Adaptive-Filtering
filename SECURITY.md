@@ -2,10 +2,10 @@
 
 ## Security Updates
 
-### December 12, 2025 - Next.js Security Update
+### December 2025 - Next.js Security Update
 
 #### Summary
-Updated Next.js from version 14.2.7 to 14.2.35 to address critical security vulnerabilities in React Server Components (RSC).
+Updated Next.js from version 14.2.7 to 14.2.35 to address critical security vulnerabilities in React Server Components (RSC) disclosed on December 11, 2025.
 
 #### Vulnerabilities Fixed
 
