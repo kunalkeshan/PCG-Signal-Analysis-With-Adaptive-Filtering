@@ -57,7 +57,7 @@ export const FOOTER_NAVIGATION: NavItem[] = [
 	},
 	{
 		name: 'Privacy Policy',
-		url: '/legal/privacy',
+		url: '/privacy',
 		target: '_self',
 	},
 	{
