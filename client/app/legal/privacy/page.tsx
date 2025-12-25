@@ -14,8 +14,8 @@ export default function PrivacyPolicy() {
 					{/* Introduction */}
 					<section className="space-y-4">
 						<p className="text-base text-foreground leading-relaxed">
-							PCG Signal Analysis with Adaptive Filtering ("we", "us", "our", or "Company")
-							operates the website at{' '}
+							PCG Signal Analysis with Adaptive Filtering (&quot;we&quot;, &quot;us&quot;,
+							&quot;our&quot;, or &quot;Company&quot;) operates the website at{' '}
 							<span className="font-semibold">
 								PCG-Signal-Analysis-With-Adaptive-Filtering
 							</span>
@@ -282,8 +282,8 @@ export default function PrivacyPolicy() {
 							</li>
 						</ul>
 						<p className="text-base text-foreground leading-relaxed mt-4">
-							To exercise these rights, please contact us using the information provided in the "Contact Us"
-							section below.
+							To exercise these rights, please contact us using the information provided in the &quot;Contact
+							Us&quot; section below.
 						</p>
 					</section>
 
@@ -299,11 +299,11 @@ export default function PrivacyPolicy() {
 
 					{/* 9. Children's Privacy */}
 					<section className="space-y-3">
-						<h2 className="text-2xl font-bold">9. Children's Privacy</h2>
+						<h2 className="text-2xl font-bold">9. Children&apos;s Privacy</h2>
 						<p className="text-base text-foreground leading-relaxed">
 							Our services are not directed to children under the age of 13. We do not knowingly collect
 							personal information from children under 13. If we become aware that a child under 13 has
-							provided us with information, we will promptly delete such information and terminate the child's
+							provided us with information, we will promptly delete such information and terminate the child&apos;s
 							access to our services. If you believe we have collected information from a child under 13,
 							please contact us immediately.
 						</p>
