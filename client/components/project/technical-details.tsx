@@ -355,7 +355,7 @@ const TechnicalDetails = () => {
 							<p className='font-medium text-dim-greys text-justify'>
 								RLS achieves maximum SNR improvement of 9-12 dB, followed by Kalman filters
 								(7-10 dB), LMS (6-9 dB), and TLMS (5-8 dB). Higher SNR improvements translate
-								to better noise suppression and enhanced diagnostic accuracy. RLS's superior
+								to better noise suppression and enhanced diagnostic accuracy. RLS&apos;s superior
 								performance is attributable to solving the exact least-squares problem at each
 								iteration.
 							</p>
