@@ -145,6 +145,14 @@ This project primarily uses two Python packages: NumPy and Matplotlib. Here's an
    - Matplotlib allows us to visually inspect the original PCG signal, the noisy signal, and the filtered output, which is crucial for assessing the performance of our adaptive filter.
 
 
+## Dataset
+
+This project uses the **PhysioNet/CinC Challenge 2016 Dataset** for PCG signal analysis. The dataset contains phonocardiogram recordings from multiple clinical locations, providing a diverse set of heart sound samples for testing and validation.
+
+- **Dataset Link**: [PhysioNet/CinC Challenge 2016](https://archive.physionet.org/pn3/challenge/2016/)
+
+The dataset includes normal and abnormal heart sound recordings, making it suitable for developing and evaluating adaptive filtering techniques for cardiac assessment.
+
 ## Future Work
 
 - Implement real PCG signal input
