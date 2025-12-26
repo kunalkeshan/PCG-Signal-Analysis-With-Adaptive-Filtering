@@ -43,16 +43,41 @@ Our goal is to develop an effective noise reduction technique using adaptive fil
 Run the main script:
 
 ``` bash
-python pcg_adaptive_filter.py
+python main.py
 ```
 
-This will generate a synthetic PCG signal, add noise, apply the adaptive filter, and display the results.
+The script will:
+
+1. Prompt you to select an MP3 file from the `signals/` directory.
+2. Add Gaussian noise and apply either LMS or Leaky LMS filtering.
+3. Display plots for the original, noisy, and filtered signals.
+4. Save the filtered output as a timestamped WAV file under `outputs/`.
+
+### Audio Input Requirements
+
+- Place MP3 files in the `signals/` directory.
+- The CLI uses `audioread` by default and falls back to FFmpeg if needed.
+- Install FFmpeg and ensure it is on your `PATH` if you see a backend error.
+
+### Front-End Client (Optional)
+
+The `client/` directory contains a Next.js UI for documentation and project
+marketing content.
+
+```bash
+cd client
+pnpm install
+pnpm dev
+```
+
+Visit `http://localhost:3000` to view the client site.
 
 ## Project Structure
 
-- `pcg_adaptive_filter.py`: Main script containing the adaptive filter implementation and signal processing logic
+- `main.py`: Main script containing the adaptive filter implementation and signal processing logic
 - `requirements.txt`: List of Python package dependencies
 - `README.md`: This file, containing project information and instructions
+- `client/`: Next.js front-end content and static pages
 
 ## Code Understanding
 
@@ -163,7 +188,8 @@ The dataset includes normal and abnormal heart sound recordings, making it suita
 
 ## Contributing
 
-Contributions to this project are welcome. Please fork the repository and submit a pull request with your proposed changes.
+Contributions to this project are welcome. Please see [CONTRIBUTING.md](CONTRIBUTING.md)
+for setup details, workflow, and quality checks.
 
 ## License
 
