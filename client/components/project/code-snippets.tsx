@@ -1,4 +1,8 @@
+'use client';
+
 import React from 'react';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 const codeExamples = [
 	{
@@ -298,12 +302,19 @@ const CodeSnippets = () => {
 											Python Implementation
 										</h4>
 									</div>
-									<div className='ml-10 lg:ml-0 bg-gray-50 rounded-lg border border-gray-200 overflow-hidden'>
-										<pre className='p-4 overflow-x-auto text-sm'>
-											<code className='language-python text-gray-800 font-mono leading-relaxed'>
-												{example.python}
-											</code>
-										</pre>
+									<div className='ml-10 lg:ml-0 rounded-lg overflow-hidden'>
+										<SyntaxHighlighter
+											language='python'
+											style={vscDarkPlus}
+											customStyle={{
+												margin: 0,
+												borderRadius: '0.5rem',
+												fontSize: '0.875rem',
+											}}
+											showLineNumbers={true}
+										>
+											{example.python}
+										</SyntaxHighlighter>
 									</div>
 								</div>
 
@@ -315,12 +326,19 @@ const CodeSnippets = () => {
 											MATLAB Implementation
 										</h4>
 									</div>
-									<div className='ml-10 lg:ml-0 bg-gray-50 rounded-lg border border-gray-200 overflow-hidden'>
-										<pre className='p-4 overflow-x-auto text-sm'>
-											<code className='language-matlab text-gray-800 font-mono leading-relaxed'>
-												{example.matlab}
-											</code>
-										</pre>
+									<div className='ml-10 lg:ml-0 rounded-lg overflow-hidden'>
+										<SyntaxHighlighter
+											language='matlab'
+											style={vscDarkPlus}
+											customStyle={{
+												margin: 0,
+												borderRadius: '0.5rem',
+												fontSize: '0.875rem',
+											}}
+											showLineNumbers={true}
+										>
+											{example.matlab}
+										</SyntaxHighlighter>
 									</div>
 								</div>
 							</div>
