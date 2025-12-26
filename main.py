@@ -1,3 +1,10 @@
+"""CLI workflow for adaptive filtering of PCG signals.
+
+This script loads an audio signal from the `signals/` directory, adds Gaussian
+noise, applies either LMS or Leaky LMS adaptive filtering, and saves the
+filtered result to `outputs/` as a WAV file.
+"""
+
 import os
 import numpy as np
 import matplotlib.pyplot as plt
@@ -9,6 +16,17 @@ from datetime import datetime
 
 # Define LMS function
 def lms(x, dn, mu, M):
+    """Apply the Least Mean Squares (LMS) adaptive filter.
+
+    Args:
+        x: Input signal (typically a noise reference).
+        dn: Desired signal (noisy signal to be filtered).
+        mu: Step size / learning rate.
+        M: Filter length (number of taps).
+
+    Returns:
+        Tuple of (weights, output_signal, error_signal).
+    """
     N = len(x)
     w = np.zeros(M)
     y = np.zeros(N)
@@ -22,6 +40,18 @@ def lms(x, dn, mu, M):
 
 # Define Leaky LMS function
 def llms(x, dn, mu, M, lambda_):
+    """Apply the Leaky LMS adaptive filter.
+
+    Args:
+        x: Input signal (typically a noise reference).
+        dn: Desired signal (noisy signal to be filtered).
+        mu: Step size / learning rate.
+        M: Filter length (number of taps).
+        lambda_: Leakage factor controlling weight decay.
+
+    Returns:
+        Tuple of (weights, output_signal, error_signal).
+    """
     N = len(x)
     w = np.zeros(M)
     y = np.zeros(N)
@@ -35,10 +65,12 @@ def llms(x, dn, mu, M, lambda_):
 
 # Load signals dynamically
 def get_signal_files(directory):
+    """Return a list of MP3 filenames from the provided directory."""
     return [file for file in os.listdir(directory) if file.endswith(".mp3")]
 
 # Main workflow
 def main():
+    """Run the interactive CLI workflow for filtering PCG signals."""
     # Set up the signals directory
     signals_dir = "signals"
     outputs_dir = "outputs"
