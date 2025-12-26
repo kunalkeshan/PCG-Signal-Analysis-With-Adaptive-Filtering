@@ -288,37 +288,40 @@ const CodeSnippets = () => {
 								</p>
 							</div>
 
-							{/* Python Implementation */}
-							<div className='mb-6'>
-								<div className='flex items-center gap-2 mb-3 ml-10'>
-									<div className='w-3 h-3 rounded-full bg-blue-500'></div>
-									<h4 className='font-heading font-semibold text-base'>
-										Python Implementation
-									</h4>
+							{/* Code Implementations - Side by Side on Desktop */}
+							<div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
+								{/* Python Implementation */}
+								<div>
+									<div className='flex items-center gap-2 mb-3 ml-10 lg:ml-0'>
+										<div className='w-3 h-3 rounded-full bg-blue-500'></div>
+										<h4 className='font-heading font-semibold text-base'>
+											Python Implementation
+										</h4>
+									</div>
+									<div className='ml-10 lg:ml-0 bg-gray-50 rounded-lg border border-gray-200 overflow-hidden'>
+										<pre className='p-4 overflow-x-auto text-sm'>
+											<code className='language-python text-gray-800 font-mono leading-relaxed'>
+												{example.python}
+											</code>
+										</pre>
+									</div>
 								</div>
-								<div className='ml-10 bg-gray-50 rounded-lg border border-gray-200 overflow-hidden'>
-									<pre className='p-4 overflow-x-auto text-sm'>
-										<code className='language-python text-gray-800 font-mono leading-relaxed'>
-											{example.python}
-										</code>
-									</pre>
-								</div>
-							</div>
 
-							{/* MATLAB Implementation */}
-							<div>
-								<div className='flex items-center gap-2 mb-3 ml-10'>
-									<div className='w-3 h-3 rounded-full bg-orange-500'></div>
-									<h4 className='font-heading font-semibold text-base'>
-										MATLAB Implementation
-									</h4>
-								</div>
-								<div className='ml-10 bg-gray-50 rounded-lg border border-gray-200 overflow-hidden'>
-									<pre className='p-4 overflow-x-auto text-sm'>
-										<code className='language-matlab text-gray-800 font-mono leading-relaxed'>
-											{example.matlab}
-										</code>
-									</pre>
+								{/* MATLAB Implementation */}
+								<div>
+									<div className='flex items-center gap-2 mb-3 ml-10 lg:ml-0'>
+										<div className='w-3 h-3 rounded-full bg-orange-500'></div>
+										<h4 className='font-heading font-semibold text-base'>
+											MATLAB Implementation
+										</h4>
+									</div>
+									<div className='ml-10 lg:ml-0 bg-gray-50 rounded-lg border border-gray-200 overflow-hidden'>
+										<pre className='p-4 overflow-x-auto text-sm'>
+											<code className='language-matlab text-gray-800 font-mono leading-relaxed'>
+												{example.matlab}
+											</code>
+										</pre>
+									</div>
 								</div>
 							</div>
 						</div>
